@@ -49,6 +49,7 @@ rebirthButton.addEventListener("click", function() {
         xp = xp - rebirthCost
         additionalXp = 1
         rebirthMultiplier = rebirthMultiplier + 1
+        rebirths++
         updateUI()
     }
 })
