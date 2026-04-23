@@ -26,16 +26,15 @@ let additionalXp = 1
 // Costs
 let additionalXpCost = 50
 let additionalXpCostBy5 = 500
-let additionalXpCostBy20 = 2000
-let additionalXpCostBy50 = 5000
-let additionalXpCostBy100 = 10000
-let additionalXpCostBy1000 = 100000
+let additionalXpCostBy20 = 7500
+let additionalXpCostBy50 = 30000
+let additionalXpCostBy100 = 100000
+let additionalXpCostBy1000 = 1000000
 
-let rebirthCost = 10000
-let rebirth2Cost = 25000
-let rebirth5Cost = 75000
-let rebirth10Cost = 250000
-
+let rebirthCost = 200000
+let rebirth2Cost = 500000
+let rebirth5Cost = 2000000
+let rebirth10Cost = 10000000
 function displayXP(){
     xpText.innerText = "You have " + xp + " XP."
 }
@@ -89,7 +88,7 @@ addXpBy20Button.addEventListener("click", function() {
         additionalXp += 20
         updateUI()
     } else{
-        alert("Not enough XP! You need 2,000 XP to buy this!")
+        alert("Not enough XP! You need 7,500 XP to buy this!")
     }
 })
 
@@ -100,7 +99,7 @@ addXpBy50Button.addEventListener("click", function() {
         additionalXp += 50
         updateUI()
     } else{
-        alert("Not enough XP! You need 5,000 XP to buy this!")
+        alert("Not enough XP! You need 30,000 XP to buy this!")
     }
 })
 
@@ -111,7 +110,7 @@ addXpBy100Button.addEventListener("click", function() {
         additionalXp += 100
         updateUI()
     } else{
-        alert("Not enough XP! You need 10,000 XP to buy this!")
+        alert("Not enough XP! You need 100,000 XP to buy this!")
     }
 })
 
@@ -122,7 +121,7 @@ addXpBy1000Button.addEventListener("click", function() {
         additionalXp += 1000
         updateUI()
     } else{
-        alert("Not enough XP! You need 100,000 XP to buy this!")
+        alert("Not enough XP! You need 1,000,000 XP to buy this!")
     }
 })
 
@@ -135,7 +134,7 @@ rebirthButton.addEventListener("click", function() {
         rebirths++
         updateUI()
     } else{
-        alert("Not enough XP! You need 10,000 XP to buy this!")
+        alert("Not enough XP! You need 200,000 XP to buy this!")
     }
 }) 
 
@@ -148,7 +147,7 @@ rebirthButton2.addEventListener("click", function() {
         rebirths = rebirths + 2
         updateUI()
     } else{
-        alert("Not enough XP! You need 25,000 XP to buy this!")
+        alert("Not enough XP! You need 500,000 XP to buy this!")
     }
 }) 
 
@@ -161,7 +160,7 @@ rebirthButton5.addEventListener("click", function() {
         rebirths = rebirths + 5
         updateUI()
     } else{
-        alert("Not enough XP! You need 75,000 XP to buy this!")
+        alert("Not enough XP! You need 2,000,000 XP to buy this!")
     }
 }) 
 
@@ -174,7 +173,7 @@ rebirthButton10.addEventListener("click", function() {
         rebirths = rebirths + 10
         updateUI()
     } else{
-        alert("Not enough XP! You need 250,000 XP to buy this!")
+        alert("Not enough XP! You need 10,000,000 XP to buy this!")
     }
 }) 
 
